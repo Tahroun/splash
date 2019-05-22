@@ -7,7 +7,7 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
-    <plugin name="cordova-plugin-splashscreen" source="npm" />
+    <plugin name="cordova-plugin-splashscreen" source="npm" spec="5.0.2"  />
         <platform name="android">
 	    <!-- you can use any density that exists in the Android project -->
 
