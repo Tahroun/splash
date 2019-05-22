@@ -7,10 +7,17 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
-    <!--<plugin name="cordova-plugin-splashscreen" source="npm" />
-        <splash platform="android" qualifier="port-ldpi" src="res/screen/android/screen-ldpi-portrait.png" />
-        <splash src="splash.png" />
-        <preference name="SplashScreenDelay" value="5000" />-->
+    <plugin name="cordova-plugin-splashscreen" source="npm" />
+        <platform name="android">
+	    <!-- you can use any density that exists in the Android project -->
+
+	    <splash src="res/drawable-hdpi/screen_ldpi_portrait.9.png" density="port-hdpi"/>
+	    <splash src="res/drawable-xxdpi/screen_ldpi_portrait.9.png" density="port-xxhdpi"/>
+	    <splash src="res/drawable-xxxhdpi/screen_ldpi_portrait.9.png" density="port-xxxhdpi"/>
+	    <splash src="res/drawable-mdpi/screen_ldpi_portrait.9.png" density="port-mdpi"/>
+    	    <splash src="res/drawable-xhdpi/screen_ldpi_portrait.9.png" density="port-xhdpi"/>
+	</platform>
+        <preference name="SplashScreenDelay" value="5000" />
 	
 
     <content src="index.html" />
